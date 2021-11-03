@@ -67,4 +67,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-re
+#
+#
+#
+#
+1.Added first page for users / workers
+2.Changed classes and css elements to ones needed
+3.Added worker loginpage - needed element change and functionalities
+4.Added user starting page but needs alot of changes, create card elements to reuse them
+
+

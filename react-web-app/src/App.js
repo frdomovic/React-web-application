@@ -1,26 +1,26 @@
+import { Route, Switch } from "react-router-dom";
+
 import "./App.css";
+
+import UserStartPage from "./pages/UserStartPage";
+import WorkerLoginPage from "./pages/WorkerLoginPage";
+import StartingPage from "./components/StartingPage";
 
 function App() {
   return (
-    <body>
-      <div className="mainContainer">
-        <button className="btnKlijent">
-          <span className="txtKlijent"> ulaz klijent</span>
-        </button>
-
-        <button className="btnLogin">
-          <span className="txtLogin">prijava djelatnici</span>
-        </button>
-
-        <div className="cloudShape">
-          <div className="cs1"></div>
-          <div className="cs2"></div>
-          <div className="cs3"></div>
-          <span className="txtCloud">Red u Red</span>
-        </div>
-        
-      </div>
-    </body>
+    <div>
+      <Switch>
+        <Route path="/" exact>
+          <StartingPage />
+        </Route>
+        <Route path="/UserStartPage">
+          <UserStartPage />
+        </Route>
+        <Route path="/WorkerLoginPage">
+          <WorkerLoginPage />
+        </Route>
+      </Switch>
+    </div>
   );
 }
 

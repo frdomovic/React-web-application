@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+  }
+  @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+  body {
+    font-size: 14px;
+    
+  }
+  
+  .containerPage {
+    width: 375px;
+    height: 812px;
+    background: rgba(59,47,59,1);
+    opacity: 1;
+    position: relative;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(255,255,255,1);
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .titlePrijava {
+    width: 383px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 559px;
+    left: 25px;
+    font-family: Poppins;
+    font-weight: SemiBold Italic;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+  }
+  .circle1 {
+    width: 120px;
+    height: 124px;
+    background: rgba(236,199,191,1);
+    opacity: 1;
+    position: absolute;
+    top: -50px;
+    left: 12px;
+    border-radius: 50%;
+  }
+  .circle2 {
+    width: 211px;
+    height: 211px;
+    background: rgba(249,174,135,1);
+    opacity: 1;
+    position: absolute;
+    top: -3px;
+    left: -100px;
+    border-radius: 50%;
+  }
+  .circle3 {
+    width: 145px;
+    height: 145px;
+    background: rgba(140,202,197,1);
+    opacity: 1;
+    position: absolute;
+    top: 115px;
+    left: -20%;
+    border-radius: 50%;
+  }
+  .name {
+    color: #fff;
+  }
+  .name {
+    color: #fff;
+  }
+  .titleKorisnickoime {
+    width: 106px;
+    color: rgba(145,145,145,1);
+    position: absolute;
+    top: 615px;
+    left: 37px;
+    font-family: Poppins;
+    font-weight: SemiBold Italic;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+  .titlepass {
+    width: 53px;
+    color: rgba(145,145,145,1);
+    position: absolute;
+    top: 667px;
+    left: 39px;
+    font-family: Poppins;
+    font-weight: SemiBold Italic;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+  .containerPW {
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    top: 658px;
+    left: 290px;
+    
+  }
+  .containerPW img{
+    height: 100%;
+    opacity: 0.7;
+  }
+
+  .btnLogindiv{
+    top: 712px;
+    width: 100%;
+    position: absolute;
+  }
+  .btnLogin {
+    /*width+height - dimenzije gumba, background - boja gumba
+      padding: namjesta unutarnje rubove 
+      margin: granice sa svake strane - npr div ima margin 50px i sa svake strane ima taj rub
+      opacity: prozirnost pojedinih elementa 
+      overflow: način na koji handla elemente ako izlaze iz ruba okvira, npr moze se sa scroll 
+      rijesit ili crop da ih nema
+      position: relative - cropa da sve stane 
+      position: absolute - pozicionira se najblizem roditelju ima mogucnost preklapanja preko
+      elemenata 
+      ako nema predaka pozicionira se po bodyju
+      */
+    margin: auto;
+    width: 149px;
+    height: 33px;
+    background: rgba(236,199,191,1);
+    padding: 6px 44px;
+    top: 712px;
+    left: 112px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    overflow: hidden;
+  }
+  .txtLogin {
+    width: 61px;
+    color: rgba(255,255,255,1);
+    font-family: Poppins;
+    font-weight: SemiBold Italic;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .containerbottom{
+    position:relative;
+  }
+  .recoverydiv{
+    top: 764px;
+    position: relative;
+    text-align: center;
+  }
+  .txtForgot {
+    width: 109px;
+    color: rgba(145,145,145,1);
+    font-family: Poppins;
+    font-weight: Italic;
+    font-size: 10px;
+  }
+  .txtRecover {
+    width: 109px;
+    color: aquamarine;
+    font-family: Poppins;
+    font-weight: Italic;
+    font-size: 10px;
+  }
+
+  .underline{
+    position:absolute;
+    width: 295px;
+    height: 1px;
+    background: rgba(236,199,191,0.5);
+    top: 695px;
+    left: 32px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    overflow: hidden;
+  }
+  .underline2{
+    position:absolute;
+    width: 295px;
+    height: 1px;
+    background: rgba(236,199,191,0.5);
+    top: 640px;
+    left: 32px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    overflow: hidden;
+  }
