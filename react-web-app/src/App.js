@@ -5,6 +5,7 @@ import "./App.css";
 import UserStartPage from "./pages/UserStartPage";
 import WorkerLoginPage from "./pages/WorkerLoginPage";
 import StartingPage from "./components/StartingPage";
+import WorkerStartPage from "./pages/WorkerStartPage";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/WorkerLoginPage">
           <WorkerLoginPage />
+        </Route>
+        <Route path="/WorkerStartPage">
+          <WorkerStartPage />
         </Route>
       </Switch>
     </div>

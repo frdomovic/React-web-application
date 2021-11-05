@@ -1,6 +1,14 @@
 import classes from "./workerLP.module.css";
 import showlogo from "./showlogo.png";
-function WorkerLoginPage() {
+import { Link } from "react-router-dom";
+
+function WorkerLoginPage(elm) {
+  
+  function showpassword(){
+    this.state={
+      showpassword: false
+    }
+  }
   return (
     <div className={classes.containerPage}>
       <span className={classes.titlePrijava}>Prijava za djelatnike </span>
@@ -12,27 +20,39 @@ function WorkerLoginPage() {
       <div className={classes.name}></div>
       <div className={classes.name}></div>
 
-      <span className={classes.titleKorisnickoime}>Korisničko ime</span>
+      <input
+        className={classes.titleKorisnickoime}
+        type="text"
+        id="username"
+        name="fname"
+        hint="Korisničko ime"
+        placeholder="Korisničko ime"
+      ></input>
       <div className={classes.underline}></div>
-      <span className={classes.titlepass}>Lozinka</span>
+      <input
+        className={classes.titlepass}
+        type="password"
+        id="upassword"
+        name="upassword"
+        placeholder="Lozinka"
+      ></input>
       <div className={classes.underline2}></div>
 
       <div className={classes.containerPW}>
-        <img src={showlogo} alt="show password"></img>
+        <img src={showlogo} alt="show password" onClick={() => this.showpassword({showpassword: })}></img>
       </div>
+      <Link to="/WorkerStartPage">
+        <div className={classes.btnLogindiv}>
+          <button className={classes.loginbtn}>NASTAVI</button>
+        </div>
+      </Link>
 
-      <div className={classes.btnLogindiv}>
-        <div className={classes.btnLogin}>
-          <span className={classes.txtLogin}>NASTAVI</span>
+      <div className={classes.containerbottom}>
+        <div className={classes.recoverydiv}>
+          <span className={classes.txtForgot}>Zaboravljena </span>
+          <span className={classes.txtRecover}>lozinka?</span>
         </div>
       </div>
-      <div className={classes.containerbottom}>
-      <div className={classes.recoverydiv}>
-        <span className={classes.txtForgot}>Zaboravljena </span>
-        <span className={classes.txtRecover}>lozinka?</span>
-      </div>
-      </div>
-      
     </div>
   );
 }

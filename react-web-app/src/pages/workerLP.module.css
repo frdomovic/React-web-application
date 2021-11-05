@@ -69,7 +69,8 @@
     color: #fff;
   }
   .titleKorisnickoime {
-    width: 106px;
+    width: 280px;
+    background: transparent;
     color: rgba(145,145,145,1);
     position: absolute;
     top: 615px;
@@ -79,9 +80,16 @@
     font-size: 14px;
     opacity: 1;
     text-align: left;
+    padding-left: 10px;
+    border: hidden;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
   }
   .titlepass {
-    width: 53px;
+    width: 250px;
+    background: transparent;
     color: rgba(145,145,145,1);
     position: absolute;
     top: 667px;
@@ -91,6 +99,12 @@
     font-size: 14px;
     opacity: 1;
     text-align: left;
+    padding-left: 10px;
+    border: hidden;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;;
   }
   .containerPW {
     width: 37px;
@@ -107,48 +121,32 @@
 
   .btnLogindiv{
     top: 712px;
+    left: 112px;
     width: 100%;
     position: absolute;
   }
-  .btnLogin {
-    /*width+height - dimenzije gumba, background - boja gumba
-      padding: namjesta unutarnje rubove 
-      margin: granice sa svake strane - npr div ima margin 50px i sa svake strane ima taj rub
-      opacity: prozirnost pojedinih elementa 
-      overflow: način na koji handla elemente ako izlaze iz ruba okvira, npr moze se sa scroll 
-      rijesit ili crop da ih nema
-      position: relative - cropa da sve stane 
-      position: absolute - pozicionira se najblizem roditelju ima mogucnost preklapanja preko
-      elemenata 
-      ako nema predaka pozicionira se po bodyju
-      */
+  .loginbtn{
     margin: auto;
     width: 149px;
     height: 33px;
     background: rgba(236,199,191,1);
-    padding: 6px 44px;
-    top: 712px;
-    left: 112px;
-    border-top-left-radius: 11px;
-    border-top-right-radius: 11px;
-    border-bottom-left-radius: 11px;
-    border-bottom-right-radius: 11px;
-    overflow: hidden;
-  }
-  .txtLogin {
-    width: 61px;
+    padding: 3px 44px;
     color: rgba(255,255,255,1);
     font-family: Poppins;
     font-weight: SemiBold Italic;
     font-size: 14px;
     text-align: left;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
   }
 
   .containerbottom{
     position:relative;
   }
   .recoverydiv{
-    top: 764px;
+    top: 750px;
     position: relative;
     text-align: center;
   }

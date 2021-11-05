@@ -4,17 +4,20 @@
   body {
     font-size: 14px;
   }
-  .v12_8 {
+  .mainPageContainer {
     width: 375px;
     height: 812px;
     background: rgba(59,47,59,1);
     opacity: 1;
-    position: absolute;
+    position: relative;
+    border-style: solid;
+    border-width: thin;
+    border-color: rgba(255,255,255,1);
     top: 0px;
     left: 0px;
     overflow: hidden;
   }
-  .v12_21 {
+  .listContainer {
     width: 375px;
     height: 790px;
     background: rgba(254,234,230,1);
@@ -28,20 +31,16 @@
     border-bottom-right-radius: 42px;
     overflow: hidden;
   }
-  .v12_44 {
-    width: 359px;
+  .titleContainer {
+    width: 250px;
     height: 50px;
-    background: url("v12_44.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 6px;
+    top: 15px;
     left: 8px;
     overflow: hidden;
   }
-  .v12_22 {
+  .apptitle {
     width: 205px;
     color: rgba(255,255,255,1);
     position: absolute;
@@ -50,14 +49,11 @@
     opacity: 1;
     text-align: left;
   }
-  .name {
-    color: #fff;
-  }
-  .v12_24 {
+  .titleOdjeli {
     width: 113px;
     color: rgba(59,47,59,1);
     position: absolute;
-    top: 77px;
+    top: 10px;
     left: 131px;
     font-family: Poppins;
     font-weight: Bold Italic;
@@ -66,9 +62,9 @@
     text-align: center;
   }
   .v13_45 {
-    width: 334px;
-    height: 752px;
-    background: url("../images/v13_45.png");
+    width: 50px;
+    height: 50px;
+    background: url("./v12_42.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -169,9 +165,9 @@
     overflow: hidden;
   }
   .v13_46 {
-    width: 248px;
-    height: 651px;
-    background: url("../images/v13_46.png");
+    width: 50px;
+    height: 50px;
+    background: url("./v12_41.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -184,7 +180,7 @@
   .v12_36 {
     width: 60px;
     height: 60px;
-    background: url("../images/v12_36.png");
+    background: url("./v12_40.png");
     opacity: 1;
     position: absolute;
     top: 0px;
@@ -194,7 +190,7 @@
   .v12_37 {
     width: 60px;
     height: 60px;
-    background: url("../images/v12_37.png");
+    background: url("./v12_39.png");
     opacity: 1;
     position: absolute;
     top: 200px;
@@ -204,7 +200,7 @@
   .v12_38 {
     width: 60px;
     height: 60px;
-    background: url("../images/v12_38.png");
+    background: url("./v12_38.png");
     opacity: 1;
     position: absolute;
     top: 200px;
@@ -214,7 +210,7 @@
   .v12_39 {
     width: 60px;
     height: 60px;
-    background: url("../images/v12_39.png");
+    background: url("./v12_37.png");
     opacity: 1;
     position: absolute;
     top: 397px;
@@ -224,7 +220,7 @@
   .v12_40 {
     width: 60px;
     height: 60px;
-    background: url("../images/v12_40.png");
+    background: url("./v12_35.png");
     opacity: 1;
     position: absolute;
     top: 397px;
@@ -234,7 +230,7 @@
   .v12_41 {
     width: 60px;
     height: 60px;
-    background: url("../images/v12_41.png");
+    background: url("./v12_36.png");
     opacity: 1;
     position: absolute;
     top: 591px;
@@ -244,7 +240,7 @@
   .v12_42 {
     width: 60px;
     height: 60px;
-    background: url("../images/v12_42.png");
+    background: url("./v12_38.png");
     opacity: 1;
     position: absolute;
     top: 591px;
@@ -252,14 +248,14 @@
     border-radius: 50%;
   }
   .v13_55 {
-    width: 255px;
-    height: 426px;
-    background: url("../images/v13_55.png");
+    width: 50px;
+    height: 50px;
+    background: url("./v12_39.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
-    position: absolute;
+    position: relative;
     top: 230px;
     left: 61px;
     overflow: hidden;
@@ -324,68 +320,62 @@
     opacity: 1;
     text-align: left;
   }
-  .v13_53 {
-    width: 56px;
+  .btnexit {
+    width: 50px;
     height: 27px;
     background: rgba(236,199,191,1);
-    padding: 6px 44px;
-    margin: 10px;
-    opacity: 1;
+    padding: 6px 35px;
+    margin: auto;
     position: absolute;
-    top: 19px;
-    left: 310px;
+    top: 20px;
+    left: 290px;
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
     overflow: hidden;
   }
-  .v13_54 {
-    width: 37px;
+  .txtexit {
+    width: 30px;
     color: rgba(255,255,255,1);
-    position: absolute;
-    top: 3px;
-    left: 9px;
     font-family: Poppins;
+    position: inherit;
+    top: 3px;
+    left:20px;
     font-weight: SemiBold Italic;
     font-size: 14px;
-    opacity: 1;
-    text-align: left;
+    
   }
-  .v17_103 {
+  .cardcontainer {
     width: 145px;
     height: 170px;
-    background: url("../images/v17_103.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 145px;
-    left: 20px;
-    overflow: hidden;
-  }
-  .v12_25 {
-    width: 145px;
-    height: 170px;
+    
     background: rgba(236,199,191,1);
     opacity: 1;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 60px;
+    left: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
   }
-  .v12_35 {
+ 
+  .logo_pic {
     width: 60px;
     height: 60px;
-    background: url("../images/v12_35.png");
+    background: url("./v12_35.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
     opacity: 1;
     position: absolute;
     top: 14px;
     left: 42px;
     border-radius: 50%;
   }
-  .v13_47 {
+  .titleOdjel {
     width: 66px;
     color: rgba(59,47,59,1);
     position: absolute;
@@ -397,7 +387,7 @@
     opacity: 1;
     text-align: left;
   }
-  .v13_56 {
+  .descOdjel {
     width: 56px;
     color: rgba(59,47,59,1);
     position: absolute;
@@ -469,17 +459,15 @@
     opacity: 1;
     text-align: center;
   }
-  .v17_121 {
+  .btnlinecontainer {
     width: 99px;
     height: 23px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
     position: absolute;
-    top: 282px;
-    left: 44px;
+    top: 135px;
+    left: 25px;
     overflow: hidden;
   }
-  .v17_118 {
+  .btnline {
     width: 97px;
     height: 23px;
     background: rgba(59,47,59,1);
@@ -493,7 +481,7 @@
     border-bottom-right-radius: 9px;
     overflow: hidden;
   }
-  .v17_119 {
+  .btnlinetxt {
     width: 84px;
     color: rgba(255,255,255,1);
     position: absolute;
