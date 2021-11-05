@@ -1,14 +1,11 @@
 import classes from "./workerLP.module.css";
 import showlogo from "./showlogo.png";
 import { Link } from "react-router-dom";
+import React from "react";
 
 function WorkerLoginPage(elm) {
   
-  function showpassword(){
-    this.state={
-      showpassword: false
-    }
-  }
+  const [show, setShow] = React.useState(false)
   return (
     <div className={classes.containerPage}>
       <span className={classes.titlePrijava}>Prijava za djelatnike </span>
@@ -31,15 +28,17 @@ function WorkerLoginPage(elm) {
       <div className={classes.underline}></div>
       <input
         className={classes.titlepass}
-        type="password"
+        type={show ? "text" : "password"}
         id="upassword"
         name="upassword"
+        autoComplete={false}
         placeholder="Lozinka"
       ></input>
       <div className={classes.underline2}></div>
 
       <div className={classes.containerPW}>
-        <img src={showlogo} alt="show password" onClick={() => this.showpassword({showpassword: })}></img>
+        <img src={showlogo} alt="show password" onClick={() => setShow(!show)}>
+        </img>
       </div>
       <Link to="/WorkerStartPage">
         <div className={classes.btnLogindiv}>
