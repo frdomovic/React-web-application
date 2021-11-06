@@ -64,7 +64,7 @@
   .v13_45 {
     width: 50px;
     height: 50px;
-    background: url("./v12_42.png");
+    background: url("../media/icon_logo.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -164,6 +164,7 @@
     box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
   }
+  /*
   .v13_46 {
     width: 50px;
     height: 50px;
@@ -259,7 +260,7 @@
     top: 230px;
     left: 61px;
     overflow: hidden;
-  }
+  }*/
   .v13_48 {
     width: 64px;
     color: rgba(59,47,59,1);
@@ -365,7 +366,7 @@
   .logo_pic {
     width: 60px;
     height: 60px;
-    background: url("./v12_35.png");
+    background: url("../media/icon_logo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;

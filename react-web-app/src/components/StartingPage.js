@@ -1,4 +1,4 @@
-import classes from './StartingPage.module.css';
+import classes from '../css/StartingPage.module.css';
 import { Link } from "react-router-dom";
 
 function StartingPage() {
@@ -10,7 +10,7 @@ function StartingPage() {
             <span className={classes.txtKlijent}>ulaz klijent</span>
           </button>
         </Link>
-        <Link to="/WorkerLoginPage">
+        <Link to="/login">
           <button className={classes.btnLogin}>
             <span className={classes.txtLogin}>prijava djelatnici</span>
           </button>

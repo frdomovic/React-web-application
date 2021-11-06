@@ -1,9 +1,9 @@
 /*import cls from "./userstartpage.module.css";*/
-import OdjelList from "../components/Odjeli/OdjelList";
 /*
 mainPageContainer - unutar njega su svi elementi ekrana koje koristimo
 listContainer - unutar njega su liste odjela 
 */
+import "../css/userStartPage.module.css"
 const DUMMY_DATA = [
   {
     id: "m1",
@@ -23,9 +23,7 @@ const DUMMY_DATA = [
 function UserStartPage() {
   return (
     <div>
-        <section>
-            <OdjelList items={DUMMY_DATA} />
-        </section>
+        USER START PAGE
     </div>
   );
 }

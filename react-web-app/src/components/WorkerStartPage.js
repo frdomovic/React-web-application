@@ -1,13 +1,31 @@
-import { Link } from "react-router-dom";
-import classes from "./workerStartPage.module.css";
+import { Link, useHistory } from "react-router-dom";
+import React, { useState } from "react";
+import { Card, Button, Alert } from "react-bootstrap";
+import { useAuth } from "../context/AuthContext";
+
+import classes from "../css/workerStartPage.module.css";
 
 function WorkerStartPage() {
+  const [error, setError] = useState("");
+  const { currentUser, logout } = useAuth();
+  const history = useHistory()
+  async function handleLogout() {
+    setError('')
+    try{
+        await logout()
+        history.push('/')
+    }catch{
+        setError('Failed to log out')
+    }
+  }
+
   return (
     <div className={classes.pageContainer}>
-      <span className={classes.usernameWorker}>DJELATNIK : korisničkoime</span>
-      <Link to="/">
-        <button className={classes.btnExit}>IZLAZ</button>
-      </Link>
+      <span className={classes.usernameWorker}>DJELATNIK:  {currentUser.email}</span>
+      <Button className={classes.btnExit} onClick={handleLogout}>
+        <span className={classes.btnExitTxt}>IZLAZ</span>
+      </Button>
+
       <div className={classes.name}></div>
       <div className={classes.v20_225}></div>
       <span className={classes.v20_226}>VAŠ ŠALTER : </span>

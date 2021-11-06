@@ -18,7 +18,7 @@
   .mainContainer {
     width: 375px;
     height: 812px;
-    background: url("./backgrounds/page_login.png");
+    background: url("../media/page_login.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
