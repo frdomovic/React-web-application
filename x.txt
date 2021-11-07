@@ -1,6 +1,0 @@
-.v11_33 img{
-      position: absolute;
-      top: 659px;
-      left: 296px;
-      width: 10%;
-    }
